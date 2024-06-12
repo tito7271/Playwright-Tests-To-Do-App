@@ -29,7 +29,7 @@ test('user can delete a task', async ({ page }) => {
     expect(tasks).not.toContain('Test Task')
 })
 
-// Test if a user can mark a task as complete
+// Verify if a user can mark a task as complete
 test('user can mark a task as complete', async ({page}) => {
     // Arrange 
     await page.goto('http://localhost:8080/')
@@ -44,7 +44,7 @@ test('user can mark a task as complete', async ({page}) => {
     expect(completedTask).not.toBeNull()
 })
 
-// Test if a user can filter tasks
+// Verify if a user can filter tasks
 test('user can filter tasks', async ({page}) => {
     // Arrange 
     await page.goto('http://localhost:8080/')
